@@ -1,3 +1,7 @@
+import tkinter as tk
+from tkinter import filedialog
+
+
 def ruta():
     """
     Abre un diálogo para seleccionar un directorio y devuelve la ruta completa del directorio seleccionado.
@@ -5,9 +9,6 @@ def ruta():
     Returns:
         str: Ruta completa del directorio seleccionado o una cadena vacía si se cancela.
     """
-    import tkinter as tk
-    from tkinter import filedialog
-
     # Crear una ventana raíz oculta
     root = tk.Tk()
     root.withdraw()
@@ -20,4 +21,4 @@ def ruta():
     # Destruir la ventana raíz
     root.destroy()
 
-    return ruta_archivo
+    return ruta_directorio
